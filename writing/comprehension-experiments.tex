@@ -1,0 +1,591 @@
+\documentclass[dina4,12pt,fleqn]{article}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{mathtools}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage[dvips]{graphics}
+\usepackage[table]{xcolor}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+
+\usepackage[normalem]{ulem}
+
+\usepackage{multicol}
+\usepackage{txfonts}
+%\usepackage{amsfonts}
+
+
+%%%%%%%%%% bibliography stuff %%%%%%%%%%%%%
+%\usepackage[numbers]{natbib}
+%\bibliographystyle{abbrvnat}
+\usepackage{natbib}
+\bibliographystyle{/Users/tonhauser.1/Library/Latex/cslipubs-natbib}
+
+\setlength{\bibhang}{0.5in}
+\setlength{\bibsep}{0mm}
+\bibpunct[:]{(}{)}{;}{a}{,}{,}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{wrapfig}
+%\setlength{\intextsep}{8pt}%
+\setlength{\columnsep}{8pt}%
+
+\usepackage{gb4e}
+%\usepackage{/Users/judith/Library/Latex/drs}
+%\usepackage{/Users/judith/Library/Latex/avm}
+\usepackage[all]{xy}
+\usepackage{rotating}
+\usepackage{tipa}
+\usepackage{multirow}
+\usepackage{authblk}
+\usepackage{adjustbox}
+\usepackage{array}
+
+ 
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{1ex}
+
+\renewcommand\figurename{Fig.}
+
+\newcommand{\yi}{\'{\symbol{16}}}
+\newcommand{\nasi}{\~{\symbol{16}}}
+\newcommand{\hina}{h\nasi na}
+\newcommand{\ina}{\nasi na}
+
+\exewidth{(\thexnumi)}
+
+\newcommand{\citepos}[1]{\citeauthor{#1}'s \citeyear{#1}}
+\newcommand{\citetpos}[1]{\citeauthor{#1}'s (\citeyear{#1})}
+
+\newcommand{\6}{\mbox{$[\hspace*{-.6mm}[$}} 
+\newcommand{\9}{\mbox{$]\hspace*{-.6mm}]$}}
+\newcommand{\sem}[2]{\6#1\9$^{#2}$}
+\renewcommand{\ni}{\~{\i}}
+
+\newcommand{\jt}[1]{\textbf{\color{blue}JT: #1}}
+
+
+
+%\author{Elena Vaik\v snorait\.{e} \\ Stuttgart University}
+\title{Prosody of presupposition projection: \\ Comprehension experiments}
+
+\author{Elena, Judith}
+
+% Optional short title inside square brackets, for the running headers.
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+\begin{itemize}[leftmargin=12pt]
+
+\item Factive presupposition:
+
+\begin{exe}
+\ex\label{ex} Perhaps she realized that he was unreliable.
+\end{exe}
+
+\item Our production experiment investigated prosodic cues to the projection of factive presuppositions based on utterances by 11 talkers of 15 sentences produced in contexts in which the presupposition either projects (committed condition) or doesn't project (not-committed condition) (\citealt*{vaiksnoraite-etal2018}).
+
+We established 3 cues to the projection of factive presuppositions:
+
+\begin{enumerate}[noitemsep]
+
+    \item  pitch accent on the last content word:  (L+)H* is more likely in not-committed than in committed condition
+    
+    \item duration: duration of last content word is longer in not-committed than in committed condition
+    
+    \item f0: the f0 of the entire utterance is higher in the not-committed than in the committed condition
+    
+\end{enumerate}
+
+\item The goal of the comprehension experiments is to identify which prosodic cues listeners attend to in identifying what they take a speaker to be committed to and, in particular, whether they attend to the prosodic cues identified in the production experiment.
+
+\item The stimuli for both experiments are productions from the production experiment. There are a total of 114 utterances to chose from. Because one of our comprehension experiments involves choosing the member of a pair that fits the context best, we limited our attention to those where we have a target sentence produced by the same talker in the two conditions.
+
+There are 43 pairs of utterances, i.e., target sentences like (\ref{ex}) that were produced both in the context in which the presupposition projects and in the context in which the presupposition does not project. To better understand the properties of these 43 pairs, we coded them for consistency with each of the three prosodic cues for (non-)projection identified in the production experiment:
+
+\begin{enumerate}[noitemsep]
+    \item PA Consistent: iff PA on the last content word is (L+)H* non-committed condition AND not (L+)H* in committed condition
+    \item DUR Consistent: if the duration of the last content word duration is longer in non-committed condition than committed condition
+    \item F0 Consistent: if the utterance F0 mean is higher in non-committed condition than committed condition
+\end{enumerate}
+
+Thus, each utterance pair is consistent with 3, 2, 1 or 0 of the cues that emerged from the production experiment. 
+
+\end{itemize}
+
+
+\section{Comprehension Experiment 1: Matching task.}
+
+In this comprehension experiment, participants are presented with a written context and two utterances of the same sentence by the same talker. Participants are asked to identify which of the two utterances sounds better as part of this context. The context is either from the committed or the non-committed conditions; one of the two utterances was produced in that context, the other one was not.
+
+\paragraph{Participants.} Recruited on AMT.
+
+\paragraph{Stimuli.} A stimulus consists of a written context that excludes the target sentence and two utterances of the target sentence by the same speaker from the production experiment. Participants are asked to chose the production that sounds best given the written context.
+
+\begin{exe}
+\ex \textbf{Sample discourse. }My church was looking for a new financial administrator. We interviewed a
+very well-qualified man who had great references and a lot of
+experience. We were completely shocked when our pastor refused to hire
+him, and she didn't want to tell us why. \textit{Perhaps she was aware that he was unreliable.} Or perhaps she just didn't like him. 
+\end{exe}
+
+We wanted to use the maximal number of utterance pairs for this experiment while also ensuring the following:
+
+\begin{enumerate}[noitemsep]
+\item Each list has the same number of target stimuli: this limits us to 7 target stimuli per list, namely utterances of the target sentences N2, K2, A3, A1, K3, D2.
+    \item Each of the 11 talkers occurs at most once per list (the talkers are identified by `P' for `participant'); in the end, productions by 10 of the 11 talkers are used.
+    \item Each list has utterance pairs with 0, 1, 2, and 3 cues.
+    \item Each list contains roughly the same amount of cues that go in the right direction.
+\end{enumerate}
+
+We were able to create 8 lists of 7 utterance pairs each, using a total of 28 of the 43 utterance pairs. As shown in Table \ref{table1}, each pair of lists (a/b) includes the same 7 utterance pairs, but the two lists in each pair of lists differ in whether the utterance pair is presented in the context in which the presupposition projects (subscript $_{c}$) or doesn't project (subscript $_{nc}$). 
+
+\begin{table}[!h]
+    \centering
+\begin{tabular}{l | ccccccc}
+
+& \multicolumn{7}{c}{target sentences}  \\ 
+  List                           & N2   & K2    & A3    & A1    & A2    & K3    & D2 \\
+             \hline\hline
+List 1a (10 cues)    & P1$_{c}$  & P14$_{nc}$   & P8$_{c}$     & P6$_{nc}$    & P11$_{c}$    & P4$_{nc}$    & P12$_{c}$  \\
+List 1b (10 cues)    & P1$_{nc}$   & P14$_{c}$    & P8$_{nc}$    & P6$_{c}$     & P11$_{nc}$   & P4$_{c}$     & P12$_{nc}$ \\
+\hline
+List 2 (11 cues)     & P12$_{c}$  & P11$_{nc}$   & P6$_{c}$    & P4$_{nc}$    & P8$_{c}$    & P9$_{nc}$    & P3$_{c}$ \\
+List 2 (11 cues)     & P12$_{nc}$  & P11$_{c}$   & P6$_{nc}$    & P4$_{c}$    & P8$_{nc}$    & P9$_{c}$    & P3$_{nc}$ \\
+\hline
+List 3 (11 cues)     & P3$_{c}$   & P8$_{nc}$    & P14$_{c}$   & P12$_{nc}$   & P3$_{c}$    & P1$_{nc}$    & P5$_{c}$ \\
+List 3 (11 cues)     & P3$_{nc}$   & P8$_{c}$    & P14$_{nc}$   & P12$_{c}$   & P3$_{nc}$    & P1$_{c}$    & P5$_{nc}$ \\
+\hline
+List 4 (12 cues)     & P6$_{c}$   & P4$_{nc}$   & P5$_{c}$    & P3$_{nc}$    & P1$_{c}$    & P12$_{nc}$   & P8$_{c}$ \\
+List 4 (12 cues)     & P6$_{nc}$   & P4$_{c}$   & P5$_{nc}$    & P3$_{c}$    & P1$_{nc}$    & P12$_{c}$   & P8$_{nc}$ \\
+
+\end{tabular}
+    \caption{8 lists of 7 target stimuli each}
+    \label{table1}
+\end{table}
+
+\begin{table}[!h]
+    \centering
+\begin{tabular}{|c|c|c|c|}
+                \hline
+Prosodic cue    & Pitch Accent   & Duration    & F0   \\
+             \hline
+List 1 (10 cues) (a/b)   & 3   & 6   & 1  \\
+List 2 (11 cues) (a/b)    & 2  & 4   & 5    \\
+List 3 (11 cues) (a/b)    & 3   & 4    & 4   \\
+List 4 (12 cues) (a/b)    & 3   & 5   & 4   \\
+\hline
+Total & 11 & 19 & 14\\
+\hline
+\end{tabular}
+    \caption{Lists: the number of prosodic cues occurring in each list}
+    \label{table2}
+\end{table}
+
+\newpage
+
+\paragraph{Procedure.} The participants were presented a written discourse on the screen excluding the target sentence. They had to read the discourse and then listen to the auditory stimuli. The participants were asked to type the target sentence (as an attention check) and to choose one of the two utterances. 
+
+Instructions: tell participants that there are several attention checks. If they always read the text and listen to both sounds, they are sure to get them right. 
+
+Present the discourse
+
+Here are two utterances of the sentence that is missing from the text above:
+
+Present the two utterances (call them SOUND 1 and SOUND 2)
+
+Please type the sentence into the box:
+
+PRESENT BOX
+
+Please select the sound you like best: 
+
+BUTTON 1 = SOUND 1 
+BUTTON 2 = SOUND 2
+
+
+\paragraph{Analysis} We are interested in i) whether participants can choose the correct utterance (i.e., the utterance that was produced in the context that they read) and ii) which prosodic cues they attended to in making their decision, whether correct or not. 
+
+To answer the first question, we calculate the \% correct answer in the two conditions, i.e., when the context is such that the presupposition projects and when the context is such that the presupposition does not project. We then use a one sample t-test to determine whether the number of correct answers in each condition is significantly different from chance (50\%).
+
+To answer the second question, we also analyze separately the responses in the two conditions, i.e., the responses to stimuli with a committed context (presupposition projects) and to stimuli with a not-committed context (presupposition doesn't project).
+
+We code the chosen utterances for whether they were originally produced in a committed context (1) or in a not-committed context (0). 
+
+We then fit binomial mixed effects models to the data in each condition to identify which prosodic cues (differences between the two utterances!) listeners attended to in making their choice.
+
+committed context: {\tt choice (0/1) $\sim$ prosodic cues + (1|participant)  + (1|item) }
+\\ $\Longrightarrow$ if a prosodic cue is significant with a positive coefficient, then that prosodic cue is a cue to projection
+
+not-committed context: {\tt choice (0/1) $\sim$ prosodic cues + (1|participant)  + (1|item) }
+\\ $\Longrightarrow$ if a prosodic cue is significant with a positive coefficient, then that prosodic cue is a cue to non-projection
+
+\medskip
+
+The preliminary models include the following fixed effects for prosodic cues:
+
+\begin{enumerate}[topsep=-3pt,itemsep=-.5ex]
+
+\item presence/absence of (L+)H* pitch accent on last content word
+
+\item difference in duration of last content word
+
+\item difference in f0 of the two utterances
+
+\item difference in duration of the predicate
+
+\item difference in duration of the complement clause
+
+\item pitch accent on the predicate (need to think about how to code ``difference'')
+
+\item difference in f0 of the predicate
+
+\item difference in f0 of the complement clause
+
+\item others?
+
+\end{enumerate}
+
+In selecting the prosodic cues, we are guided by the literature on focus in American English.
+
+\newpage
+
+
+\section{Comprehension experiment 2: Certainty rating}
+
+In this comprehension experiment, participants are presented with an utterance of a target sentence and asked to assess whether the speaker is certain of the content of the complement, as in \citealt{tonhauser-salt26,stevens-etal2017,tbd-variability}.
+
+\paragraph{Participants.} Recruited on AMT.
+
+\paragraph{Stimuli.} The stimuli consist of the 56 utterances from the first comprehension experiment. They are presented to participants as utterances by a named speaker, as in (\ref{ex2}). Participants were asked whether the speaker is certain of the content of the complement.
+
+\begin{exe}
+\ex\label{ex2} Dana (about Valeria and Scott): {\em Perhaps she realized that he was unreliable}.
+\end{exe}
+
+The 56 target stimuli were divided into 8 lists of 7 utterances (same as in the first comprehension experiment). On each list, about half of the stimuli come from the committed condition and about half come from the not-committed condition. 
+
+
+\paragraph{Procedure.} Each participant was randomly assigned to one of the eight lists from the experiment in and presented with the 7 stimuli  and two controls (as attention checks) in random order. As in prior research, participants were told that they overheard somebody say something at a party. Participants were instructed to listen to each stimulus (as often as they wanted) and to answer the question presented with the stimulus. Participants recorded their responses on a 7-point Likert scale labeled at four points to allow for maximal comparability with previous comprehension studies: Not certain/1, Possibly not certain/3, Possibly certain/5, Certain/7.
+
+
+
+\paragraph{Analysis:} ordinal mixed effects models
+
+{\tt certainty rating $\sim$ prosodic cues + (1|participant)  + (1|item)}
+
+\bibliography{/Users/tonhauser.1/Documents/bibliography}
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%
+
+\begin{table}[!h]
+    \centering
+    \begin{tabular}{c|c|c|c}
+        Talker & PA & Duration & F0 mean \\
+        \hline
+        P1 & \textbf{consistent} (c: L*, nc: (L+)H* ) & \textbf{consistent} c (0.236) , nc (0.248)   & NA \\
+        P12 & \textbf{inconsistent} (c: (L+)H*, nc: (H+)!H*) & \textbf{inconsistent}  c (0.205) , nc (0.187) & \textbf{consistent} c (147) , nc (151)  \\
+        P4 & \textbf{consistent}  (c: (H+)H*, nc: (L+)H*) & \textbf{consistent} c (0.217) , nc (0.219)  & \textbf{consistent} c (187) , nc (198) \\
+        P6 & \textbf{consistent}  (c: (H+)H*, nc: (L+)H*) & \textbf{consistent} c (0.133) , nc (0.143)  & \textbf{inconsistent} c (238) , nc (233)
+    \end{tabular}
+    \caption{Pairs of N2 Utterances: \textit{Perhaps she noticed that he had bad breath.}}
+    \label{tab:my_label}
+\end{table}
+
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{c|c|c|c}
+        Talker & PA & Duration & F0 mean \\
+        \hline
+P1 & \textbf{inconsistent} (c: (L+)H*, nc: (L+)H*) &  \textbf{consistent} c (0.261) , nc (0.328) & \textbf{consistent} c (233) , nc (234) \\
+P11 & \textbf{inconsistent} (c: (H+)H*, nc: (H+)H*) & \textbf{inconsistent} c (0.307) , nc (0.299) & \textbf{inconsistent} c (106) , nc (98) \\
+P14 & \textbf{inconsistent} (c: (L+)H*, nc: (L+)H*) & \textbf{consistent} c (0.272) , nc (0.297) & \textbf{inconsistent} c (212) , nc (212)\\
+P3 & \textbf{inconsistent} (c: (L+)H*, nc: (H+)H*) & \textbf{inconsistent} c (0.319) , nc (0.291) & \textbf{inconsistent} c (242) , nc (223) \\
+P4 & \textbf{inconsistent} (c: (L+)H*, nc: (L+)H*) & \textbf{consistent} c (0.294) , nc (0.311) & \textbf{consistent} c (203) , nc (214) \\
+P8 & \textbf{inconsistent} (c: L*, nc: L*) & \textbf{consistent} c (0.285) , nc (0.354) & \textbf{inconsistent} c (107) , nc (102)
+
+    \end{tabular}
+    \caption{Pairs of K2 Utterances: \textit{Perhaps he knew that she was married.}}
+    \label{tab:my_label}
+\end{table}
+
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{c|c|c|c}
+        Talker & PA & Duration & F0 mean \\
+        \hline
+P1 & \textbf{inconsistent} (c: (L+)H*, nc: (L+)H*) &  \textbf{inconsistent} c (0.266) , nc (0.252) & \textbf{inconsistent} c (238) , nc (230) \\
+P14 & \textbf{inconsistent}  (c: (L+)H*, nc: (L+)H*) & \textbf{inconsistent} c (0.259) , nc (0.254) & \textbf{inconsistent} c (225) , nc (208) \\
+P5 & \textbf{inconsistent} (c: (H+)H*, nc: (H+)H*) & \textbf{consistent} c (0.243) , nc (0.242) & \textbf{consistent} c (205) , nc (249)\\
+P6 & \textbf{inconsistent} (c: (H+)H*, nc: (H+)H*) & \textbf{inconsistent} c (0.288) , nc (0.266) & \textbf{consistent} c (254) , nc (259) \\
+P8 & \textbf{inconsistent} (c: (L+)H*, nc: (L+)H*) & \textbf{consistent} c (0.271) , nc (0.328) & \textbf{inconsistent} c (103) , nc (99) \\
+
+    \end{tabular}
+    \caption{Pairs of A3 Utterances: \textit{Perhaps she was aware that he had bad reviews.}}
+    \label{tab:my_label}
+\end{table}
+
+
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{c|c|c|c}
+        Talker & PA & Duration & F0 mean \\
+        \hline
+P12 & \textbf{consistent} (c: (H+)H*, nc: (L+)H*) &  \textbf{inconsistent} c (0.287) , nc (0.276) & \textbf{inconsistent} c (149) , nc (145) \\
+P14 & \textbf{inconsistent} (c: (H+)H*, nc: (H+)H*) & \textbf{consistent} c (0.262) , nc (0.292) & \textbf{inconsistent} c (211) , nc (211) \\
+P3 & \textbf{inconsistent} (c: (H+)H*, nc: (H+)H*) & \textbf{consistent} c (0.283) , nc (0.313) & \textbf{consistent} c (204) , nc (226)\\
+P4 & \textbf{consistent} (c: (H+)H*, nc: (L+)H*) & \textbf{consistent} c (0.312) , nc (0.313) & \textbf{consistent} c (198) , nc (217) \\
+P6 & \textbf{consistent} (c: (H+)H*, nc: (L+)H*)  & \textbf{inconsistent} c (0.309) , nc (0.309) & \textbf{consistent} c (248) , nc (257) \\
+P8 & \textbf{inconsistent} (c: (L+)H*, nc: (L+)H*) & \textbf{inconsistent} c (0.361) , nc (0.346) & \textbf{consistent} c (97) , nc (109) 
+    \end{tabular}
+    \caption{Pairs of A1 Utterances: \textit{Perhaps she was aware that he was a terrible administrator.}}
+    \label{tab:my_label}
+\end{table}
+
+
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{c|c|c|c}
+        Talker & PA & Duration & F0 mean \\
+        \hline
+P1 & \textbf{inconsistent} (c: (L+)H*, nc: (L+)H*) &  \textbf{consistent} c (0.353) , nc (0.380) & \textbf{consistent} c (223) , nc (226) \\
+P11 & \textbf{inconsistent} (c: (H+)H*, nc: (H+)H*) & \textbf{inconsistent} c (0.388) , nc (0.366) & \textbf{inconsistent} c (123) , nc (109) \\
+P12 & \textbf{inconsistent} (c: (L+)H*, nc: (L+)H*) & \textbf{consistent} c (0.373) , nc (0.376) & \textbf{inconsistent} c (148) , nc (148)\\
+P3 & \textbf{consistent} (c: (H+)H*, nc: (L+)H*) & \textbf{consistent} c (0.412) , nc (0.413) & \textbf{consistent} c (201) , nc (227) \\
+P4 & \textbf{inconsistent} (c: (L+)H*, nc: (L+)H*)  & \textbf{inconsistent} c (0.385) , nc (0.367) & \textbf{inconsistent} c (211) , nc (211) \\
+P8 & \textbf{inconsistent} (c: (L+)H*, nc: (L+)H*) & \textbf{consistent} c (0.426) , nc (0.445) & \textbf{inconsistent} c (115) , nc (101) 
+    \end{tabular}
+    \caption{Pairs of A2 Utterances: \textit{Perhaps she was aware that he was unreliable.}}
+    \label{tab:my_label}
+\end{table}
+
+
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{c|c|c|c}
+        Talker & PA & Duration & F0 mean \\
+        \hline
+P1 & \textbf{inconsistent} (c: (H+)H*, nc: L*) &  \textbf{inconsistent} c (0.253) , nc (0.218) & \textbf{consistent} c (217) , nc (235) \\
+P11 & \textbf{consistent} (c: L*, nc: (L+)H*) & \textbf{consistent} c (0.227) , nc (0.287) & \textbf{consistent} c (106) , nc (107) \\
+P12 & \textbf{inconsistent} (c: (L+)H*, nc: (L+)H*) & \textbf{inconsistent} c (0.266) , nc (0.225) & \textbf{inconsistent} c (139) , nc (134)\\
+P13 & \textbf{consistent} (c: L*, nc: (L+)H*) & \textbf{inconsistent} c (0.240) , nc (0.231) & \textbf{?} c (NA) , nc (85) \\
+P14 & \textbf{inconsistent} (c: (L+)H*, nc: (L+)H*)  & \textbf{consistent} c (0.243) , nc (0.257) & \textbf{consistent} c (223) , nc (226) \\
+P4 & \textbf{consistent} (c: (H+)H*, nc: (L+)H*) & \textbf{consistent} c (0.281) , nc (0.326) & \textbf{consistent} c (188) , nc (203)  \\
+P9 & \textbf{consistent} (c: L*, nc: (L+)H*) & \textbf{consistent} c (0.247) , nc (0.328) & \textbf{consistent} c (191) , nc (204) 
+    \end{tabular}
+    \caption{Pairs of K3 Utterances: \textit{Perhaps she knew that he was wrong.}}
+    \label{tab:my_label}
+\end{table}
+
+
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{c|c|c|c}
+        Talker & PA & Duration & F0 mean \\
+        \hline
+P1 & \textbf{inconsistent} (c: (L+)H*, nc: (L+)H*) &  \textbf{consistent} c (0.296) , nc (0.297) & \textbf{inconsistent} c (228) , nc (201) \\
+P11 & \textbf{inconsistent} (c: (H+)H*, nc: (H+)H*) & \textbf{consistent} c (0.257) , nc (0.321) & \textbf{?} c (NA) , nc (122) \\
+P12 & \textbf{inconsistent} (c: (L+)H*, nc: (L+)H*) & \textbf{consistent} c (0.267) , nc (0.280) & \textbf{inconsistent} c (152) , nc (143)\\
+P14 & \textbf{inconsistent} (c: (L+)H*, nc: (L+)H*) & \textbf{inconsistent} c (0.283) , nc (0.280) & \textbf{?} c (NA) , nc (218) \\
+P3 & \textbf{inconsistent} (c: (L+)H*, nc: (L+)H*)  & \textbf{consistent} c (0.281) , nc (0.303) & \textbf{consistent} c (180) , nc (233) \\
+P5 & \textbf{inconsistent} (c: (H+)H*, nc: (H+)H*) & \textbf{consistent} c (0.243) , nc (0.261) & \textbf{consistent} c (219) , nc (241)  \\
+P6 & \textbf{inconsistent} (c: (L+)H*, nc: (L+)H*) & \textbf{consistent} c (0.270) , nc (0.288) & \textbf{consistent} c (244) , nc (232) \\
+P8 & \textbf{consistent} (c: L*, nc: (L+)H*) & \textbf{consistent} c (0.260) , nc (0.340) & \textbf{consistent} c (95) , nc (100)  \\
+P9 & \textbf{inconsistent}(c: (L+)H*, nc: (L+)H*) & \textbf{consistent} c (0.318) , nc (0.319) & \textbf{consistent} c (198) , nc (214) 
+    \end{tabular}
+    \caption{Pairs of D2 Utterances: \textit{Perhaps he discovered that he’s a father.}}
+    \label{tab:my_label}
+\end{table}
+
+
+
+\paragraph{Introduction.} 
+%Projective content is utterance content that can be taken to be a commitment of the speaker even when the content is introduced by an expression in the scope of an entailment-canceling operator. %Presupposition projection is typically diagnosed with Family of Sentence variants.
+Speech signal is highly redundant: one phonological contrast can have multiple co-varying acoustic cues. For instance, the voicing contrast in English has multiple acoustic cues: duration of the vowel, duration of closure, intensity of glottal signal, F0 contour, F1 offset frequency, VOT, among others (e.g. \citealt{lisker1986voicing}). While there are many cues to a phonological contrast, the weight of co-varying cues can be different. For instance, VOT has been reported to be the primary cue in the perception of the voicing contrast in English. 
+
+Sentences with factive verbs are produced differently depending on whether
+
+The current study examines the relative weight of different prosodic cues in the perception of 
+
+For example, \cite{breen2010acoustic} found that the acoustic correlates of focus in English are intensity, mean F0, maximum F0 and word duration. \textbf{One of the primary questions in phonetic research is the relative importance of these acoustic cues.}
+
+
+%and the f0 cue is secondary in the perception of the English voicing contrast (e.g., Abramson & Lisker, 1985; Gordon, Eberhardt, & Rueckl, 1993; Whalen et al., 1993; Holt & Lotto, 2006;Francis, Kaganovich, & Driscoll-Huber, 2008; Idemaru & Holt, 2011; Francis & Nusbaum, 2002). 
+
+
+\paragraph{Different approaches to comprehension/perception experiments.}
+
+\textbf{Using stimuli from a production experiment}
+
+\cite{syrett2014prosodic} used a subset of data gathered from a production experiment in a perception experiment
+
+`Items for Perception Experiment 1 were contributed by four speakers from the Production experiment (one male and two females) and the experimenter. The naïve speakers were selected on the basis of their high comprehension scores in the Production experiment (above 75\%) and their consistent and clear production of distinct versions of the two interpretations of each sentence in their respective contexts, which largely reflected the manner of production discussed in the literature.'
+
+There were 48 experimental items. These included 24 minimal pairs of sentences in which the same sentence was produced in two distinct manners, each favoring an interpretation supported by a previous discourse context. Each speaker contributed six minimal pairs.
+
+\textbf{Manipulating stimuli as informed by a production experiment}
+In German, a sequence of three NPs can be ambiguous between two syntactic structures.
+In the examples below \textit{der Reiterin} `the rider' can either be interpreted as a genitive-case marked or dative case-marked NP, depending on the verb that follows.
+
+\begin{exe}
+\ex
+\begin{xlist}
+\ex Neulich hat der Gärtner der Reiterin den Baum gezeigt, der morsch war. \\
+        recently aux the gardener the horsewoman.gen the.acc tree.acc show that decay be \\
+        `Recently the gardener showed the horsewoman a tree, that was decaying.'
+\ex Neulich hat der Gärtner der Reiterin den Baum gefällt, der morsch war. \\
+    ’Recently the gardener of the horsewoman chopped the tree, that was decaying.�
+    \end{xlist}
+\end{exe}
+
+\cite{gollradprosodic} tested whether there are prosodic cues that are used for these two different syntactic constructions. In a production experiment, \cite{gollradprosodic} identified three prosodic cues (based on productions by 18 female participants): prefinal lengthening, pause duration, and a difference in scaling the high tones of the pitch accents. The production was followed up by a series of perception experiments: aiming to figure out i) whether German native speakers attend to the prosodic cues to syntactic structure, and ii) what is the primary prosodic cue. The perception experiments consisted of a forced decision task, where participants had to select a continuation (i.e. either a verb that licenses a dative or a genitive NP). The stimuli that were aurally presented to the participants were produced by a trained speaker that incorporated `the intonational patterns of the production study.' The first perception experiment showed that participants performed at a higher than chance level. Other experiments were
+
+
+I tested how the manipulated stimuli would sound like. I manipulated
+
+
+\cite{rao2017acoustic}: production study identified acoustic cues to focus in Marathi (F0 excursion, duration, intensity,post-focal compression of F0 range). The perception study: \textit{synthesis of stimuli}.
+
+
+
+
+\textbf{Most work on focus has investigated the role of sentence accent as the primary cue to focus (Gussenhoven 1984, 1996, 1999, 2004; Selkirk 1984, 1995, 2004).}
+
+
+\begin{enumerate}
+    \item which stimuli
+    \item DV , speaker commitment / certainty rating
+    
+\end{enumerate}
+
+\textbf{The mapping between perception and production.} 
+
+\paragraph{Previous comprehension studies.} 
+perception study Breen: A listener was presented with 7 questions that they would have to choose an answer from, listener heard the stimuli, chose the answer. \textbf{If the listener picked a wrong question, there was a buzzer sound, without it the listeners performed at a chance level.} Overall accuracy was 55\%.
+
+
+which prosodic cues to projectivity listeners attend to?
+
+
+\paragraph{The plan.}
+
+Things to consider for comprehension experiment?
+
+\begin{itemize}   
+    \item All 15 utterances or 7 utterances?
+    \item Limit to utterances without phrase breaks? There are not enough utterances to  
+    
+    
+    \item Is the speaker certain that X? forced-choice task or gradient? then more comparable with previous studies.
+    \item Amazon Mechanical Turk or Lab setting w noise-cancelling headphones
+\end{itemize}
+
+\paragraph{Material.} In the production experiment, we identified three cues to projectivity in American English: pitch accent type, f0 max, and duration of the last content word.
+
+Listeners were aware that both choices were plausible but were forced to choose the most appropriate continuation depending on the way the heard sequence was uttered. 
+
+
+%\bibliographystyle{agsm}
+%\bibliography{ref}
+
+%The target sentences were lexically identical and uttered by the same talker but were produced in either a discourse in which the clausal complement projects or it does not.
+
+The production experiment identified 3 cues to projectivity in American English i) pitch accent on the last content word; ii) duration of the last content word; iii) overall higher pitch. The 114 utterances from the production were coded with respect to whether prosody of the utterance in particular condition is consistent the results of the production experiment. 
+
+For example, the stimulus was coded as consistent with respect to last content word duration if the duration of the last content word was i) longer than the mean duration of last content word in the non-projecting discourse; and ii) shorter than the mean duration of the last content word in the projecting discourse.
+ 
+\paragraph{All 3 cues are consistent.} 22 utterances (16\%) had all three cues consistently correlating with non-projecting or projecting condition (10p, 12np). There is not a single pair (sentence produced in p and np conditions) by a single speaker.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{rrr}
+  \hline
+Sentence & Projecting & Non-projecting \\ 
+  \hline
+A1 &   3 &   3 \\ 
+  A2 &   0 &   2 \\ 
+  A3 &   1 &   1 \\ 
+  D2 &   2 &   2 \\ 
+  K2 &   0 &   2 \\ 
+  K3 &   3 &   2 \\ 
+  N2 &   1 &   0 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+F0 \& PA (17: 8p, 9np); F0 \& Duration (15: 6p, 9np); Duration \& PA (10: 2p, 9np)
+
+\paragraph{Exactly 2 consistent cues.} 42 utterances (32\%) had the two cues consistent with the (non)-projecting condition (16p, 26 np). 
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{rrr}
+  \hline
+Sentence & Projecting & Non-projecting \\ 
+  \hline
+A1 &   4 &   4 \\ 
+A2 &   2 &   4 \\ 
+A3 &   0 &   4 \\ 
+D2 &   3 &   5 \\ 
+K2 &   4 &   2 \\ 
+K3 &   1 &   4 \\ 
+N2 &   2 &   3 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+
+Out of 7 sentences 3 have utterances produced by the same speaker in both conditions (A2 - P1; D2 - P6, N2 - P4.)
+
+
+\paragraph{Only 1 consistent cue.} 32 utterances (28\%) of utterances have only one consistent cue (12p, 18np). Interestingly, from these 32 utterances: 13 had only the PA consistent, 9 only duration, 10 only f0.
+
+%P14: A3 differs only in one cue (nc: PA consistent, dur, f0 inconsistent; c: dur consistent)
+%P12: D2 differs in only one cue (c: duration; nc: PA)
+%P12: K3 nc: PA, c: f0
+
+
+\paragraph{None consistent cues}. 12 utterances (11\%) had none of the cues consistent with the (non)-projecting condition (6c, 6nc).
+
+
+This means that 56\% of the data has two or three consistent cues.
+% Mean F0 was calculated for male and female participants separately, and then all utterances in non-projecting discourses that had higher fundamental pitch that the mean were coded as consistent, as well as utterances in projecting discourses that had lower fundamental frequency than the mean. 
+
+\paragraph{Procedure.} Participants were told to imagine they have overheard somebody say something about someone else. Participants were then instructed to listen to each stimulus presented separately and answer the question presented with the stimulus. The question was about the speaker's certainty about the content of the clausal complement. Participants recorded their responses on a 7-point Likert scale labeled at four points to allow for maximal comparability with previous comprehension studies (Tonhauser 2016).  Participants were permitted to listen to each trial as many times as they wanted before responding.
+
+
+\begin{table}[!h]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+    \hline
+   &  \multicolumn{4}{c}{Number of consistent cues} \\
+   \hline
+Target Sentence & 0 & 1 & 2 & 3 \\
+\hline
+N2 &  & P12 & P6 &  P4 \\
+K2 & P3, P11 & P14, P8 & P1, P4 & \\
+A3 & P1, P14 & P6, P8 & P5 & \\
+A1 & & P12, P14, P8 & P6, P3 & P4 \\
+A2 & P4, P11 & P12, P8, P1 & P3 & \\
+K3 & P12 & P1 & P14 & P11, P4, P9 \\
+D2 & & P1, P12 & P3, P5, P6, P9 & P8\\ \hline
+    \end{tabular}
+    \caption{For each target sentence, the number of productions that differ in the prosodic cues identified in the production study, broken down by the number of cues}
+    \label{tab:Cues}
+\end{table}
