@@ -10,18 +10,18 @@ import os
 src_filename = sys.argv[1]
 output_filename = sys.argv[2]
 
-reader = csv.reader(open(src_filename))
-writer = csv.writer(open(output_filename, 'w'), delimiter=',')
+reader = csv.reader(file(src_filename))
+writer = csv.writer(file(output_filename, 'w'), delimiter=',')
 
 # header is a list containing the first line:
-header = next(reader)
+header = reader.next()
 
 newHeader = []
 
-newHeader.append("ListNumber")
+newHeader.append("List number")
 newHeader.append("List")
 
-print(newHeader)
+print newHeader
 
 writer.writerow(newHeader)
 
@@ -32,15 +32,15 @@ writer.writerow(newHeader)
 #{id:"...",context:"...",target:"...",name:"...",adj:"...",VPinf:"..."},
 #...],
 
-#clumsy way of making the required number of lists for the experiment
+#clumsy way of making 2 lists for the experiment
 list1 = set()
 list2 = set()
-list3 = set()
-list4 = set()
-list5 = set()
-list6 = set()
-list7 = set()
-list8 = set()
+# list3 = set()
+# list4 = set()
+# list5 = set()
+# list6 = set()
+# list7 = set()
+# list8 = set()
 # list9 = set()
 # list10 = set()
 # list11 = set()
@@ -76,44 +76,44 @@ for row in reader:
 		newRow.append(row[1])
 		writer.writerow(newRow)
 		
-	if row[0] == "3":
-		list3.add(row[1])
-		#print row[1]
-		newRow.append(row[0])
-		newRow.append(row[1])
-		writer.writerow(newRow)
-	
-	if row[0] == "4":
-		list4.add(row[1])
-		newRow.append(row[0])
-		newRow.append(row[1])
-		writer.writerow(newRow)
-				
-	if row[0] == "5":
-		list5.add(row[1])
-		#print row[1]
-		newRow.append(row[0])
-		newRow.append(row[1])
-		writer.writerow(newRow)
-	
-	if row[0] == "6":
-		list6.add(row[1])
-		newRow.append(row[0])
-		newRow.append(row[1])
-		writer.writerow(newRow)
-				
-	if row[0] == "7":
-		list7.add(row[1])
-		#print row[1]
-		newRow.append(row[0])
-		newRow.append(row[1])
-		writer.writerow(newRow)
-	
-	if row[0] == "8":
-		list8.add(row[1])
-		newRow.append(row[0])
-		newRow.append(row[1])
-		writer.writerow(newRow)
+# 	if row[0] == "3":
+# 		list3.add(row[1])
+# 		#print row[1]
+# 		newRow.append(row[0])
+# 		newRow.append(row[1])
+# 		writer.writerow(newRow)
+# 	
+# 	if row[0] == "4":
+# 		list4.add(row[1])
+# 		newRow.append(row[0])
+# 		newRow.append(row[1])
+# 		writer.writerow(newRow)
+# 				
+# 	if row[0] == "5":
+# 		list5.add(row[1])
+# 		#print row[1]
+# 		newRow.append(row[0])
+# 		newRow.append(row[1])
+# 		writer.writerow(newRow)
+# 	
+# 	if row[0] == "6":
+# 		list6.add(row[1])
+# 		newRow.append(row[0])
+# 		newRow.append(row[1])
+# 		writer.writerow(newRow)
+# 				
+# 	if row[0] == "7":
+# 		list7.add(row[1])
+# 		#print row[1]
+# 		newRow.append(row[0])
+# 		newRow.append(row[1])
+# 		writer.writerow(newRow)
+# 	
+# 	if row[0] == "8":
+# 		list8.add(row[1])
+# 		newRow.append(row[0])
+# 		newRow.append(row[1])
+# 		writer.writerow(newRow)
 # 				
 # 	if row[0] == "9":
 # 		list9.add(row[1])
@@ -224,12 +224,12 @@ for row in reader:
 #turn each set into a string so that I can use append
 list1 = str(list1)
 list2 = str(list2)
-list3 = str(list3)
-list4 = str(list4)
-list5 = str(list5)
-list6 = str(list6)
-list7 = str(list7)
-list8 = str(list8)
+# list3 = str(list3)
+# list4 = str(list4)
+# list5 = str(list5)
+# list6 = str(list6)
+# list7 = str(list7)
+# list8 = str(list8)
 # list9 = str(list9)
 # list10 = str(list10)
 # list11 = str(list11)
@@ -249,25 +249,23 @@ list8 = str(list8)
 
 # tmpLibrary = ",\n".join([list1,list2,list3,list4,list5,list6,list7,list8,list9,list10,list11,list12,list13,list14,list15,list16,list17,list18,list19,list20,list21,list22,list23,list24])
 
-tmpLibrary = ",\n".join([list1,list2,list3,list4,list5,list6,list7,list8])
-#print(tmpLibrary)
+tmpLibrary = ",\n".join([list1,list2])
 
-#print(list1)
-#print(list2)
+print list1
+print list2
 
 tmpLibrary = tmpLibrary.replace("'{", "{")
 tmpLibrary = tmpLibrary.replace("}'", "}")
-#tmpLibrary = tmpLibrary.replace("set(", "")
-tmpLibrary = tmpLibrary.replace("{{", "[{")
-tmpLibrary = tmpLibrary.replace("}}", "}]")
+tmpLibrary = tmpLibrary.replace("set(", "")
+tmpLibrary = tmpLibrary.replace("])", "]")
 
 Library = tmpLibrary
-print(Library)
+print Library
 
 #curpath = os.path.abspath(os.curdir)
 #print curpath
 
-os.chdir(r'/Users/tonhauser.1/Documents/current-research-topics/NSF-NAI/prop-att-experiments/5-prosody-factives/comprehension-experiments/factive-presupposition-prosody/experiments/pilots/exp1/intermediate-stimuli-files/')
+os.chdir(r'/Users/judith/Documents/current-research-topics/NSF-NAI/prop-att-experiments/5-prosody-factives/3-perception-1a/intermediate-stimuli-files/')
 
 file = open("library.txt", "w+")
 file.write(Library)
