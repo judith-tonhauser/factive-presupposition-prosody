@@ -151,9 +151,11 @@ function make_slides(f) {
 	  		rightLabel = "yes"}
 	  $(".rightLabel").html(rightLabel);
 	  ///
-	  var scenario = "";
-	  //scenario = "<font size=4>" + this.stim.scenario + "</font> <br> <br>";
-	  scenario = "<font size=4><i>" + "bla bla bla bla" + "</i></font> <br> <br>";
+	  var scenarioB = "";
+	  var scenarioE = "";
+	  scenarioB = "<font size=4><i>" + this.stim.scenarioB + "</i></font>  ";
+	  scenarioE = "<font size=4><i>" + this.stim.scenarioE + "</i></font> <br>";
+	  scenario = scenarioB + "<u><i>" + sentence + ".</i></u>  " + scenarioE;
 	  $(".scenario").html(scenario);
 	  var task = "Select the version that sounds better as part of the scenario.";
 	  //console.log(task);
@@ -284,11 +286,8 @@ var listNumber = _.shuffle(lists)[0];
 
 console.log(listNumber);
 
-// for spreadsheet
-// list, id (of the item), condition (which sound is original), sound1, sound2, verb, speaker, scenario (entire discourse, with sentence underlined and final sentence included), sentence
-
 exp.stims = [ 
-[{list:"1",id:"know-2-P14",condition:"nc",sound1:"P14-K-2-nc.wav",sound2:"P14-K-2-c.wav",verb:"know",speaker:"P14",scenario:"bla bla bla <u> bla bla </u> bla bla",sentence:"Perhaps he knew that she was married"}, {list:"1",id:"aware-2-P11",condition:"c",sound1:"P11-A-2-c.wav",sound2:"P11-A-2-nc.wav",verb:"aware",speaker:"P11",scenario:"bla bla bla <u> bla bla </u> bla bla",sentence:"Perhaps she was aware that he was unreliable"}], [{list:"2",id:"control2",condition:"control",sound1:"F2.wav",sound2:"F2.wav",verb:"control",speaker:"F2",scenario:"bla bla bla <u> bla bla </u> bla bla",sentence:"I was invited to the party"}, {list:"2",id:"know-3-P4",condition:"nc",sound1:"P4-K-3-nc.wav",sound2:"P4-K-3-c.wav",verb:"know",speaker:"P4",scenario:"bla bla bla <u> bla bla </u> bla bla",sentence:"Perhaps she knew that he was wrong"}] 
+[{list:"1",id:"know-2-P14",condition:"nc",sound1:"P14-K-2-nc.wav",sound2:"P14-K-2-c.wav",verb:"know",speaker:"P14",scenarioB:"bla bla bla",scenarioE:"bla bla bla",sentence:"Perhaps he knew that she was married"}, {list:"1",id:"aware-2-P11",condition:"c",sound1:"P11-A-2-c.wav",sound2:"P11-A-2-nc.wav",verb:"aware",speaker:"P11",scenarioB:"bla bla bla",scenarioE:"bla bla bla",sentence:"Perhaps she was aware that he was unreliable"}], [{list:"2",id:"control2",condition:"control",sound1:"F2.wav",sound2:"F2.wav",verb:"control",speaker:"F2",scenarioB:"bla bla bla",scenarioE:"bla bla bla",sentence:"I was invited to the party"}, {list:"2",id:"know-3-P4",condition:"nc",sound1:"P4-K-3-nc.wav",sound2:"P4-K-3-c.wav",verb:"know",speaker:"P4",scenarioB:"bla bla bla",scenarioE:"bla bla bla",sentence:"Perhaps she knew that he was wrong"}] 
 ][listNumber];
 
 // trials is a randomized array
