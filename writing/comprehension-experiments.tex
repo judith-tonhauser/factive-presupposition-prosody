@@ -23,7 +23,7 @@
 %\usepackage[numbers]{natbib}
 %\bibliographystyle{abbrvnat}
 \usepackage{natbib}
-\bibliographystyle{/Users/tonhauser.1/Library/Latex/cslipubs-natbib}
+\bibliographystyle{cslipubs-natbib}
 
 \setlength{\bibhang}{0.5in}
 \setlength{\bibsep}{0mm}
@@ -91,7 +91,9 @@
 \ex\label{ex} Perhaps she realized that he was unreliable.
 \end{exe}
 
-\item Our production experiment investigated prosodic cues to the projection of factive presuppositions based on utterances by 11 talkers of 15 sentences produced in contexts in which the presupposition either projects (committed condition) or doesn't project (not-committed condition) (\citealt*{vaiksnoraite-etal2018}).
+\item A number of comprehension experiments indicate that listeners attend to prosody to determine whether the CC projects (\citealt*{cummins-rohde-2015, tonhauser-2016}). Previous comprehension experiments used lab speech with select prosodicproperties as stimuli.
+
+\item Our production experiment investigated prosodic cues to the projection of factive presuppositions based on utterances by 11 talkers of 15 sentences produced in contexts in which the presupposition either projects (committed condition) or doesn't project (not-committed condition) (\citealt*{vaiksnoraite-etal-2018}).
 
 We established 3 cues to the projection of factive presuppositions:
 
@@ -122,13 +124,50 @@ Thus, each utterance pair is consistent with 3, 2, 1 or 0 of the cues that emerg
 \end{itemize}
 
 
-\section{Comprehension Experiment 1: Matching task.}
+
+\section{Comprehension experiment 1: Certainty rating}
+
+In this comprehension experiment, participants are presented with an utterance of a target sentence and asked to assess whether the speaker is certain of the content of the complement, as in \citealt{tonhauser-2016,stevens-etal-2017,tbd-variability}.
+
+\paragraph{Participants.} Recruited on AMT.
+
+\paragraph{Stimuli.} The stimuli consist of the 56 utterances from the first comprehension experiment. They are presented to participants as utterances by a named speaker, as in (\ref{ex2}). Participants were asked whether the speaker is certain of the content of the complement.
+
+\begin{exe}
+\ex\label{ex2} Dana (about Valeria and Scott): {\em Perhaps she realized that he was unreliable}.
+\end{exe}
+
+The 56 target stimuli were divided into 8 lists of 7 utterances (same as in the first comprehension experiment). On each list, about half of the stimuli come from the committed condition and about half come from the not-committed condition. 
+
+Two control items were included to make sure the participants were paying attention. The control item were unambiguous matrix sentences in \label{controlsExp1}. These sentences are expected to elicit a high certainty rating.
+
+\begin{exe}
+\ex\label{controlsExp1} 
+\begin{xlist}
+\ex I am tired.
+\ex I am invited to the party.
+\end{xlist}
+\end{exe}
+
+\paragraph{Procedure.} Each participant was randomly assigned to one of the eight lists from the experiment in and presented with the 7 stimuli  and two controls (as attention checks) in random order. As in prior research, participants were told that they overheard somebody say something at a party. Participants were instructed to listen to each stimulus (as often as they wanted) and to answer the question presented with the stimulus. Participants recorded their responses on a 7-point Likert scale labeled at four points to allow for maximal comparability with previous comprehension studies: Not certain/1, Possibly not certain/3, Possibly certain/5, Certain/7.
+
+
+
+\paragraph{Analysis:} First, we will analyze the percentage of correct responses both overall and for each condition, i.e. whether the original utterance was produced in a committed (expected rating 7) or non-committed (expected rating 1). \\
+
+
+ordinal mixed effects models
+
+{\tt certainty rating $\sim$ prosodic cues + (1|participant)  + (1|item)}
+
+
+\section{Comprehension Experiment 2: Matching task.}
 
 In this comprehension experiment, participants are presented with a written context and two utterances of the same sentence by the same talker. Participants are asked to identify which of the two utterances sounds better as part of this context. The context is either from the committed or the non-committed conditions; one of the two utterances was produced in that context, the other one was not.
 
 \paragraph{Participants.} Recruited on AMT.
 
-\paragraph{Stimuli.} A stimulus consists of a written context that excludes the target sentence and two utterances of the target sentence by the same speaker from the production experiment. Participants are asked to chose the production that sounds best given the written context.
+\paragraph{Stimuli.} A stimulus consists of a written context that excludes the target sentence and two utterances of the target sentence by the same speaker from the production experiment. Participants are asked to chose the production that they perceived to be the best match in the written context.
 
 \begin{exe}
 \ex \textbf{Sample discourse. }My church was looking for a new financial administrator. We interviewed a
@@ -192,24 +231,39 @@ Total & 11 & 19 & 14\\
 
 \newpage
 
-\paragraph{Procedure.} The participants were presented a written discourse on the screen excluding the target sentence. They had to read the discourse and then listen to the auditory stimuli. The participants were asked to type the target sentence (as an attention check) and to choose one of the two utterances. 
+\paragraph{Procedure.} The participants were presented a written discourse on the screen including the underlined target sentence. The participants had to read the discourse and then listen to the auditory stimuli. The participants were asked to choose one of the two utterances (sound  1 vs sound 2).
 
-Instructions: tell participants that there are several attention checks. If they always read the text and listen to both sounds, they are sure to get them right. 
+\begin{exe}
+\ex My brother has been with many women over the past years but he’s never been able to commit to any of them. Recently, hereceived an email from one of these women. It really upset him, but he won’t tell me what thewoman wrote to him about. \underline{Perhaps he discovered that he’s a father.} Or that she wanted himback.
+\end{exe}
 
-Present the discourse
 
-Here are two utterances of the sentence that is missing from the text above:
+Control items were included to make sure the participants were paying attention. The control item were ambiguous sentences that could be disambiguated through prosody. The control items and one training item is presented in \ref{controls}. The underlined sentences were presented aurally.
 
-Present the two utterances (call them SOUND 1 and SOUND 2)
+\begin{exe}
+\ex\label{controls}
+\begin{xlist}
+\ex Training item: \\
+Abigail is a very picky eater. She usually only eats chicken nuggets for dinner and leaves vegetables on the plate. Today she surprised her parents and ate everything that was on her plate. \underline{She even ate the peas.} She must have been really hungry.
+\ex Control 1: Ivan’s utterance is produced with rising intonation (correct) and falling (incorrect) sentence-final intonation  \\
+Daniel is home-schooling son Ivan, a third grader. They are working on a math problem that asks for the square root of 9.
+Daniel: The answer is 2.
+Ivan: \underline{The square root of 9 is 2?}
+\ex Control 2: “Jane only ran one mile” produced with nuclear pitch accent on “one” (correct) and “ran” (incorrect) \\
+Samantha recently decided to pick up running. Every morning she tries to run a bit farther than on the previous day. This morning she was supposed to run 2 miles. Unfortunately, she was exhausted and her run was considerably shorter. \underline{Jane only ran one mile.} She needs to rest.
+\ex Control 3: Sally’s utterance produced with nuclear pitch accent on “Damon” (correct) and “mac and cheese” (incorrect) \\
+Trish comes home from work and finds a mess in the kitchen. There are used pots and pans everywhere and some mac and cheese on the counter. She goes to her children: \\
+Trish: Who made mac and cheese?
+Sally: \underline{Damon made mac and cheese.}
+\end{xlist}
+\end{exe}
 
-Please type the sentence into the box:
 
-PRESENT BOX
+%Instructions: tell participants that there are several attention checks. If they always read the text and listen to both sounds, they are sure to get them right. 
 
-Please select the sound you like best: 
+%Present the discourse
 
-BUTTON 1 = SOUND 1 
-BUTTON 2 = SOUND 2
+
 
 
 \paragraph{Analysis} We are interested in i) whether participants can choose the correct utterance (i.e., the utterance that was produced in the context that they read) and ii) which prosodic cues they attended to in making their decision, whether correct or not. 
@@ -256,33 +310,9 @@ The preliminary models include the following fixed effects for prosodic cues:
 
 In selecting the prosodic cues, we are guided by the literature on focus in American English.
 
-\newpage
 
 
-\section{Comprehension experiment 2: Certainty rating}
-
-In this comprehension experiment, participants are presented with an utterance of a target sentence and asked to assess whether the speaker is certain of the content of the complement, as in \citealt{tonhauser-salt26,stevens-etal2017,tbd-variability}.
-
-\paragraph{Participants.} Recruited on AMT.
-
-\paragraph{Stimuli.} The stimuli consist of the 56 utterances from the first comprehension experiment. They are presented to participants as utterances by a named speaker, as in (\ref{ex2}). Participants were asked whether the speaker is certain of the content of the complement.
-
-\begin{exe}
-\ex\label{ex2} Dana (about Valeria and Scott): {\em Perhaps she realized that he was unreliable}.
-\end{exe}
-
-The 56 target stimuli were divided into 8 lists of 7 utterances (same as in the first comprehension experiment). On each list, about half of the stimuli come from the committed condition and about half come from the not-committed condition. 
-
-
-\paragraph{Procedure.} Each participant was randomly assigned to one of the eight lists from the experiment in and presented with the 7 stimuli  and two controls (as attention checks) in random order. As in prior research, participants were told that they overheard somebody say something at a party. Participants were instructed to listen to each stimulus (as often as they wanted) and to answer the question presented with the stimulus. Participants recorded their responses on a 7-point Likert scale labeled at four points to allow for maximal comparability with previous comprehension studies: Not certain/1, Possibly not certain/3, Possibly certain/5, Certain/7.
-
-
-
-\paragraph{Analysis:} ordinal mixed effects models
-
-{\tt certainty rating $\sim$ prosodic cues + (1|participant)  + (1|item)}
-
-\bibliography{/Users/tonhauser.1/Documents/bibliography}
+\bibliography{comprehension-experiments}
 \end{document}
 
 %%%%%%%%%%%%%%%%%%%%%
@@ -408,7 +438,7 @@ P6 & \textbf{inconsistent} (c: (L+)H*, nc: (L+)H*) & \textbf{consistent} c (0.27
 P8 & \textbf{consistent} (c: L*, nc: (L+)H*) & \textbf{consistent} c (0.260) , nc (0.340) & \textbf{consistent} c (95) , nc (100)  \\
 P9 & \textbf{inconsistent}(c: (L+)H*, nc: (L+)H*) & \textbf{consistent} c (0.318) , nc (0.319) & \textbf{consistent} c (198) , nc (214) 
     \end{tabular}
-    \caption{Pairs of D2 Utterances: \textit{Perhaps he discovered that he’s a father.}}
+    \caption{Pairs of D2 Utterances: \textit{Perhaps he discovered that heâs a father.}}
     \label{tab:my_label}
 \end{table}
 
@@ -434,7 +464,7 @@ For example, \cite{breen2010acoustic} found that the acoustic correlates of focu
 
 \cite{syrett2014prosodic} used a subset of data gathered from a production experiment in a perception experiment
 
-`Items for Perception Experiment 1 were contributed by four speakers from the Production experiment (one male and two females) and the experimenter. The naïve speakers were selected on the basis of their high comprehension scores in the Production experiment (above 75\%) and their consistent and clear production of distinct versions of the two interpretations of each sentence in their respective contexts, which largely reflected the manner of production discussed in the literature.'
+`Items for Perception Experiment 1 were contributed by four speakers from the Production experiment (one male and two females) and the experimenter. The naÃ¯ve speakers were selected on the basis of their high comprehension scores in the Production experiment (above 75\%) and their consistent and clear production of distinct versions of the two interpretations of each sentence in their respective contexts, which largely reflected the manner of production discussed in the literature.'
 
 There were 48 experimental items. These included 24 minimal pairs of sentences in which the same sentence was produced in two distinct manners, each favoring an interpretation supported by a previous discourse context. Each speaker contributed six minimal pairs.
 
@@ -445,11 +475,11 @@ In the examples below \textit{der Reiterin} `the rider' can either be interprete
 \begin{exe}
 \ex
 \begin{xlist}
-\ex Neulich hat der Gärtner der Reiterin den Baum gezeigt, der morsch war. \\
+\ex Neulich hat der GÃ€rtner der Reiterin den Baum gezeigt, der morsch war. \\
         recently aux the gardener the horsewoman.gen the.acc tree.acc show that decay be \\
         `Recently the gardener showed the horsewoman a tree, that was decaying.'
-\ex Neulich hat der Gärtner der Reiterin den Baum gefällt, der morsch war. \\
-    ’Recently the gardener of the horsewoman chopped the tree, that was decaying.�
+\ex Neulich hat der GÃ€rtner der Reiterin den Baum gefÃ€llt, der morsch war. \\
+    âRecently the gardener of the horsewoman chopped the tree, that was decaying.â
     \end{xlist}
 \end{exe}
 
@@ -501,7 +531,7 @@ Listeners were aware that both choices were plausible but were forced to choose 
 
 
 %\bibliographystyle{agsm}
-%\bibliography{ref}
+\bibliography{comprehension-experiments}
 
 %The target sentences were lexically identical and uttered by the same talker but were produced in either a discourse in which the clausal complement projects or it does not.
 
