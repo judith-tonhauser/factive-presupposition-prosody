@@ -91,25 +91,33 @@
 \ex\label{ex} Perhaps she realized that he was unreliable.
 \end{exe}
 
-\item A number of comprehension experiments indicate that listeners attend to prosody to determine whether the CC projects (\citealt*{cummins-rohde-2015, tonhauser-2016}). Previous comprehension experiments used lab speech with select prosodicproperties as stimuli.
+
+\item A number of comprehension experiments indicate that listeners attend to prosody to determine whether the CC projects (\citealt*{cummins-rohde-2015, tonhauser-2016}). Previous comprehension experiments used lab speech with select prosodic
+properties as stimuli.
+
+\item Building on previous experimental work proposed that speakers use prosody to indicate whether the CC projects
 
 \item Our production experiment investigated prosodic cues to the projection of factive presuppositions based on utterances by 11 talkers of 15 sentences produced in contexts in which the presupposition either projects (committed condition) or doesn't project (not-committed condition) (\citealt*{vaiksnoraite-etal-2018}).
 
-We established 3 cues to the projection of factive presuppositions:
+\item The goal of the comprehension experiments is to identify which prosodic cues listeners attend to in identifying what they take a speaker to be committed to and, in particular, whether they attend to the prosodic cues identified in the production experiment.
+
+\item The stimuli for both experiments are productions from the production experiment discussed in (citealt*{vaiksnoraite-etal-2018}).  The aim of the production study was to elicit productions of sentences containing a factive predicate in committed and non-committed contexts. The production study aimed at identifying prosodic correlates. We established 3 cues to the projection of factive presuppositions.
 
 \begin{enumerate}[noitemsep]
 
-    \item  pitch accent on the last content word:  (L+)H* is more likely in not-committed than in committed condition
-    
+    \item pitch accent on the last content word: (L+)H* is more likely in not-committed than in committed condition
+   
     \item duration: duration of last content word is longer in not-committed than in committed condition
     
     \item f0: the f0 of the entire utterance is higher in the not-committed than in the committed condition
     
 \end{enumerate}
 
-\item The goal of the comprehension experiments is to identify which prosodic cues listeners attend to in identifying what they take a speaker to be committed to and, in particular, whether they attend to the prosodic cues identified in the production experiment.
+\item Over-arching research question: Do hearers use surface level auditory cues in the speech signal to arrive at whether the CC projects. In comprehension experiment 1, we aimed to discover whether hearers can use auditory cues to determine whether the CC projects. In comprehension experiment 2, we aimed to discover whether given a discourse context (committed/non-committed) hearers can choose the prosodic version of a target sentence that was produced in that context. 
+\section{Experiments}
 
-\item The stimuli for both experiments are productions from the production experiment. There are a total of 114 utterances to chose from. Because one of our comprehension experiments involves choosing the member of a pair that fits the context best, we limited our attention to those where we have a target sentence produced by the same talker in the two conditions.
+\paragraph{Stimuli from the production experiment}
+The auditory stimuli for the two comprehension experiments were taken from the production experiment.  There was a total of 114 utterances recorded in the production experiment. Since we wanted to use the same stimuli in the two perception experiments and one of our comprehension experiments involves choosing the member of a pair that fits the context best, we limited our attention to those where we have a target sentence produced by the same talker in the two conditions.
 
 There are 43 pairs of utterances, i.e., target sentences like (\ref{ex}) that were produced both in the context in which the presupposition projects and in the context in which the presupposition does not project. To better understand the properties of these 43 pairs, we coded them for consistency with each of the three prosodic cues for (non-)projection identified in the production experiment:
 
@@ -124,12 +132,11 @@ Thus, each utterance pair is consistent with 3, 2, 1 or 0 of the cues that emerg
 \end{itemize}
 
 
-
 \section{Comprehension experiment 1: Certainty rating}
 
 In this comprehension experiment, participants are presented with an utterance of a target sentence and asked to assess whether the speaker is certain of the content of the complement, as in \citealt{tonhauser-2016,stevens-etal-2017,tbd-variability}.
 
-\paragraph{Participants.} Recruited on AMT.
+\paragraph{Participants.} Recruited on Prolific.
 
 \paragraph{Stimuli.} The stimuli consist of the 56 utterances from the first comprehension experiment. They are presented to participants as utterances by a named speaker, as in (\ref{ex2}). Participants were asked whether the speaker is certain of the content of the complement.
 
@@ -149,17 +156,22 @@ Two control items were included to make sure the participants were paying attent
 \end{xlist}
 \end{exe}
 
-\paragraph{Procedure.} Each participant was randomly assigned to one of the eight lists from the experiment in and presented with the 7 stimuli  and two controls (as attention checks) in random order. As in prior research, participants were told that they overheard somebody say something at a party. Participants were instructed to listen to each stimulus (as often as they wanted) and to answer the question presented with the stimulus. Participants recorded their responses on a 7-point Likert scale labeled at four points to allow for maximal comparability with previous comprehension studies: Not certain/1, Possibly not certain/3, Possibly certain/5, Certain/7.
+\paragraph{Procedure.} The experiment was hosted by PCIbex \citealt{zehr-schwarz-2018}
+
+Each participant was randomly assigned to one of the eight lists from the experiment in and presented with the 7 stimuli  and two controls (as attention checks) in random order. As in prior research, participants were told that they overheard somebody say something at a party. Participants were instructed to listen to each stimulus (as often as they wanted) and to answer the question presented with the stimulus. Participants recorded their responses on a 7-point Likert scale labeled at four points to allow for maximal comparability with previous comprehension studies: Not certain/1, Possibly not certain/3, Possibly certain/5, Certain/7.
 
 
 
-\paragraph{Analysis:} First, we will analyze the percentage of correct responses both overall and for each condition, i.e. whether the original utterance was produced in a committed (expected rating 7) or non-committed (expected rating 1). \\
+\paragraph{Analysis:} First, we calculate the means for fillers
+
+%will analyze the percentage of correct responses both overall and for each condition, i.e. whether the original utterance was produced in a committed (expected rating 7) or non-committed (expected rating 1). \\
 
 
 ordinal mixed effects models
 
 {\tt certainty rating $\sim$ prosodic cues + (1|participant)  + (1|item)}
 
+{\tt certainty rating $\sim$ condition(c/nc) + (1|participant)  + (1|item)}
 
 \section{Comprehension Experiment 2: Matching task.}
 
@@ -231,39 +243,34 @@ Total & 11 & 19 & 14\\
 
 \newpage
 
-\paragraph{Procedure.} The participants were presented a written discourse on the screen including the underlined target sentence. The participants had to read the discourse and then listen to the auditory stimuli. The participants were asked to choose one of the two utterances (sound  1 vs sound 2).
+\paragraph{Procedure.} The experiment was hosted by PCIbex \citealt{zehr-schwarz-2018}.
+The participants were presented a written discourse on the screen including the underlined target sentence. The participants had to read the discourse and then listen to the auditory stimuli. The participants were asked to choose one of the two utterances (sound  1 vs sound 2).
 
 \begin{exe}
-\ex My brother has been with many women over the past years but he’s never been able to commit to any of them. Recently, hereceived an email from one of these women. It really upset him, but he won’t tell me what thewoman wrote to him about. \underline{Perhaps he discovered that he’s a father.} Or that she wanted himback.
+\ex My brother has been with many women over the past years but he’s never been able to commit to any of them. Recently, he
+received an email from one of these women. It really upset him, but he won’t tell me what the
+woman wrote to him about. \underline{Perhaps he discovered that he’s a father.} Or that she wanted him. back.
 \end{exe}
-
 
 Control items were included to make sure the participants were paying attention. The control item were ambiguous sentences that could be disambiguated through prosody. The control items and one training item is presented in \ref{controls}. The underlined sentences were presented aurally.
 
 \begin{exe}
 \ex\label{controls}
 \begin{xlist}
-\ex Training item: \\
-Abigail is a very picky eater. She usually only eats chicken nuggets for dinner and leaves vegetables on the plate. Today she surprised her parents and ate everything that was on her plate. \underline{She even ate the peas.} She must have been really hungry.
-\ex Control 1: Ivan’s utterance is produced with rising intonation (correct) and falling (incorrect) sentence-final intonation  \\
+\ex Training item:  Ivan’s utterance is produced with rising intonation (correct) and falling (incorrect) sentence-final intonation  \\
 Daniel is home-schooling son Ivan, a third grader. They are working on a math problem that asks for the square root of 9.
 Daniel: The answer is 2.
 Ivan: \underline{The square root of 9 is 2?}
-\ex Control 2: “Jane only ran one mile” produced with nuclear pitch accent on “one” (correct) and “ran” (incorrect) \\
-Samantha recently decided to pick up running. Every morning she tries to run a bit farther than on the previous day. This morning she was supposed to run 2 miles. Unfortunately, she was exhausted and her run was considerably shorter. \underline{Jane only ran one mile.} She needs to rest.
+\ex  Control 1:  Ivan’s utterance is produced with rising intonation (correct) and falling (incorrect) sentence-final intonation  \\
+Abigail is a very picky eater. She usually only eats chicken nuggets for dinner and leaves vegetables on the plate. Today she surprised her parents and ate everything that was on her plate. \underline{She even ate the peas.} She must have been really hungry.
+\ex Control 2: “Samantha only ran one mile” produced with nuclear pitch accent on “one” (correct) and “ran” (incorrect) \\
+Samantha recently decided to pick up running. Every morning she tries to run a bit farther than on the previous day. This morning she was supposed to run 2 miles. Unfortunately, she was exhausted and her run was considerably shorter. \underline{Samantha only ran one mile.} She needs to rest.
 \ex Control 3: Sally’s utterance produced with nuclear pitch accent on “Damon” (correct) and “mac and cheese” (incorrect) \\
 Trish comes home from work and finds a mess in the kitchen. There are used pots and pans everywhere and some mac and cheese on the counter. She goes to her children: \\
 Trish: Who made mac and cheese?
 Sally: \underline{Damon made mac and cheese.}
 \end{xlist}
 \end{exe}
-
-
-%Instructions: tell participants that there are several attention checks. If they always read the text and listen to both sounds, they are sure to get them right. 
-
-%Present the discourse
-
-
 
 
 \paragraph{Analysis} We are interested in i) whether participants can choose the correct utterance (i.e., the utterance that was produced in the context that they read) and ii) which prosodic cues they attended to in making their decision, whether correct or not. 
