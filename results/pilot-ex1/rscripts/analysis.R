@@ -80,11 +80,11 @@ d = d %>%
 nrow(d)
 
 ######## VISUALIZATION
-#visualization of the distribution of certainty ratings
+#visualization of the distribution of responses
 ggplot(d, aes(x=Rating)) +
   geom_histogram()
 
-#visualization of the distribution of certainty ratings by condition
+#visualization of the distribution of responses by condition
 ggplot(d, aes(x=Rating,fill=Condition)) +
   geom_histogram() +
   stat_count()
@@ -118,7 +118,7 @@ ggplot(agr, aes(x=Condition, y=Mean)) +
   ylab("Mean rating (lower = 'less certain')") 
 ggsave("../graphs/means_condition_byparticipant.pdf")
 
-# get condition & utterance means
+# get condition & item means
 agr_item = d %>%
   group_by(Condition,Utterance) %>%
   summarize(Mean = mean(Rating), CILow = ci.low(Rating), CIHigh = ci.high(Rating)) %>%
@@ -134,9 +134,10 @@ ggplot(agr, aes(x=Condition, y=Mean)) +
   ylab("Mean rating (lower = 'less certain')") 
 ggsave("../graphs/means_item.pdf",width=9)
 
-
 # get means depending on the PA on the last content word
+table(d$lcw_PA)
 d$lcw_PA <- as.factor(d$lcw_PA)
+
 agr_focus = d %>%
   group_by(lcw_PA) %>%
   summarize(Mean = mean(Rating), CILow = ci.low(Rating), CIHigh = ci.high(Rating)) %>%
@@ -151,15 +152,20 @@ ggplot(agr_focus, aes(x=lcw_PA, y=Mean)) +
   ylab("Mean rating (lower = 'less certain')") 
 ggsave("../graphs/means_PA_lcw.pdf",width=9)
 
+
+
 ###### ANALYSIS
 
 ### Hypothesis 1: Certainty rating is predicted by the condition in which the utterance was produced (c/nc)
 d$Rating <- as.factor(d$Rating)
-Hyp1 = clmm(Rating ~ Condition + (1|Prolific.ID) + (1|File) , data = d[d$Condition != "filler",] )
+Hyp1 = clmm(Rating ~ Condition + (1+Condition|Prolific.ID) + (1|File), data = d)
 summary(Hyp1)
 
 
 ### Hypothesis 2: Certainty rating is predicted by prosody
 #The fixed effects that were found to be significant in Vaiksnoraite et al 2018
-Hyp2 = clmm(Rating ~ lcw_dur_norm + lcw_PA_Focus +  F0mean_c  + (1|Prolific.ID) + (1|File) , data = d[d$Condition != "filler",]  )
+Hyp2 = clmm(Rating ~ lcw_dur_norm * lcw_PA *  F0mean_c  + (1|Prolific.ID) + (1|File) , data = d  )
 summary(Hyp2)
+
+
+
