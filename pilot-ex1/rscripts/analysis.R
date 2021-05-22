@@ -62,7 +62,7 @@ results$Rating <- ifelse(results$Value == "No%2C not certain", 1,
                                                             7))))))
 
 #Check whether the participants left any comments
-unique(results$Comments_participants)
+unique(results$Comments)
 
 #Identify participants that did not listen to the stimuli
 results$Value <- as.character(results$Value)
