@@ -200,13 +200,17 @@ ggsave("../graphs/rating_F0.pdf",width=9)
 
 ### Hypothesis 1: Certainty rating is predicted by the condition in which the utterance was produced (c/nc)
 d$Rating <- as.factor(d$Rating)
-Hyp1 = clmm(Rating ~ Condition + (1+Condition|workerId) + (1+Condition|Utterance), data = d)
+Hyp1 = clmm(Rating ~ Condition + (1+Condition|workerId) + (1+Condition|Utterance) + (1+Condition|talker), data = d)
 summary(Hyp1)
 
 
 ### Hypothesis 2: Certainty rating is predicted by prosody
 #The fixed effects that were found to be significant in Vaiksnoraite et al 2018
-Hyp2 = clmm(Rating ~ lcw_dur_norm * lcw_PA *  F0mean_c  + (1|workerId) + (1|Utterance) , data = d  )
+# fixed effects: centered normalized duration (limited to data used in experiment)
+# pitch accent on last content word: focus ((L+)H*) versus non-focus (other PAs)
+# f0 mean of the utterance: centered on the data used in the experiment
+# sentence item effect: "Utterance"
+Hyp2 = clmm(Rating ~ lcw_dur_norm * lcw_PA *  F0mean_c  + (1+PROSODY PREDICTORS|workerId) + (1+PROSODY PREDICTORS|Utterance) + (1+PROSODY PREDICTORS|talker), data = d  )
 summary(Hyp2)
 
 
