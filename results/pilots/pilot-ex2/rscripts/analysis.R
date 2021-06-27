@@ -229,3 +229,6 @@ ranef(m1)
 m2 <- glmer(Sound_chosen ~ PA_prominence * Dur_Dif * F0_Dif + (1 + PA_prominence * Dur_Dif * F0_Dif|workerId) + (1|utt) +  (1|talker) , data = target[target$Text_condition == "nc", ], family = binomial)
 summary(m2)
 
+
+
+
